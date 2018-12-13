@@ -1,0 +1,230 @@
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'roboto';
+}
+.logo{
+    color: #f2f2f2;
+    font-family: 'Righteous';
+    margin: auto 0 auto 6rem;
+}
+
+div span{
+    font-size: 1.5rem;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width:  100vw;
+    background: linear-gradient(94.41deg, #27AE60 0%, #56CCF2 100%) ; 
+    z-index: 1;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+.main-nav > ul{
+    display: flex;
+    margin: auto 6rem auto 0;
+    justify-content: flex-end;
+}
+
+.main-nav ul li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.main-nav  li  a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.button{
+    border: solid 2px #fff;
+    padding: .5rem;
+} 
+
+.hero-image{
+    height: 100vh;
+    width:100vw;
+    max-width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-image::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/img/david-alacaraz-328972-unsplash.png");
+    filter: brightness(50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.hero-image > h1,p,button{
+    position: relative;
+    color: #fff;
+}
+
+.hero-image > h1{
+    width: 70vw;
+    font-size: 4rem;
+    margin: 0 0 .5rem 0;
+    text-align: center;
+}
+
+.hero-image > p{
+    width: 50vw;  
+    font-size: 1.5rem;;
+    text-align: center;
+    margin: 1em;
+}
+
+.start-button{
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0 0 ;
+    width: 13rem;
+    height: 3rem;
+    background: linear-gradient(94.41deg, #27AE60 0%, #56CCF2 100%) ; 
+    border-radius: 5px;
+    border: 0;
+}
+
+.olas{
+    position: absolute;
+    line-height: 0;
+}
+
+.ola-1{
+    bottom: 0;
+    left: 0;
+}
+
+.ola-2{
+    right: 0;
+    bottom: 0;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    padding: 0 5rem;
+}
+
+.sub-title{
+    text-align: center;
+    margin-top: 2rem;
+
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+
+.card{
+    width: 13rem;
+    height: 17rem;
+    padding: 1rem;
+    margin: 3rem ;
+    background-color: none;
+    
+    text-align: center;
+    
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    flex-wrap: wrap;
+}
+
+.card >img{
+    width: 10rem;   
+}
+
+.card > h3{
+    margin: .5rem 0;
+    color: #4F4F4F;
+    font-size: 1rem;
+}
+
+.card > p{
+    color: #828282;
+    font-size: 1rem;
+}
+
+footer{
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(94.41deg, #27AE60 0%, #56CCF2 100%) ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+    html{
+        font-size: 9px;
+    }
+    .main-nav{
+        height: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        margin: auto;
+    }
+
+    .main-nav > ul{
+        margin: 0;
+    }
+
+    .hero-image > h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-image > p{
+        font-size: 1rem;
+    }
+
+    .start-button{
+        font-size: 1rem;
+    }
+
+    .services{
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+    
+    .card{
+        width: 50vw;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html{
+        font-size: 14px;
+    }
+
+    .card{
+        margin: 2rem;
+    }
+}    
