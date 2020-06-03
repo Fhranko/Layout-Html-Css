@@ -5,3 +5,4 @@ Diseño y desarrollo de un layout responsive de 2 secciones para una ficticia em
 [CLICK PARA VER PROYECTO EN VIVO](https://fhranko.github.io/Responsive-Layout-Html-Css)
 
 ![](img/screencapture-Responsive-Layout.png)
+![](img/screencapture-responsive.png)
